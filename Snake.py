@@ -64,7 +64,7 @@ while True:
 			if not ((ArrY[lx] == appleY) and (ArrX[lx] == appleX)):
 				mvaddch(appleY, appleX, ord(' '),color_pair(2))
 		mvaddch(ArrY[SnakeLen], ArrX[SnakeLen], ord(' '),color_pair(3))
-		#timeout(10)
+		timeout(10)
 		cha = getch()
 
 		if cha == KEY_UP and yV != 1:
