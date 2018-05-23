@@ -20,7 +20,7 @@ while True:
 	ArrY = []
 	for i in range(80):
 		ArrX.append(0)
-	for i in range(80):
+	for i in range(25):
 		ArrY.append(0)
 
 
