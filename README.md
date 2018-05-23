@@ -13,3 +13,5 @@ Increasing Snake Length when it eats the "apple"
 Live Score Counter
 
 Ability to Play Again
+
+Constant Speed
