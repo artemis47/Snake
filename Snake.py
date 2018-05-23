@@ -20,7 +20,7 @@ while True:
 	ArrY = []
 	for i in range(80):
 		ArrX.append(0)
-	for i in range(25):
+	for i in range(80):
 		ArrY.append(0)
 
 
@@ -41,6 +41,7 @@ while True:
 		clear()
 
 		mvaddstr(12, 82, "Score = " + str(Score))
+		mvaddstr(13, 82, "Press X to Exit")
 		headX += xV
 		headY += yV
 
@@ -64,7 +65,7 @@ while True:
 			if not ((ArrY[lx] == appleY) and (ArrX[lx] == appleX)):
 				mvaddch(appleY, appleX, ord(' '),color_pair(2))
 		mvaddch(ArrY[SnakeLen], ArrX[SnakeLen], ord(' '),color_pair(3))
-		timeout(10)
+		timeout(1)
 		cha = getch()
 
 		if cha == KEY_UP and yV != 1:
@@ -88,7 +89,7 @@ while True:
 			appleX = randint(0,79)
 			appleY = randint(0,24)
 		
-			if SnakeLen < 100:
+			if SnakeLen < 80:
 				SnakeLen += 1
 		else:
 			if (headX in ArrX[:SnakeLen-1]):
@@ -101,9 +102,7 @@ while True:
 					clear()
 					refresh()
 					break
-
 	timeout(-1)
-	curs_set(1)
 	mvaddstr(12,40, "Your Score is " + str(Score))
 	mvaddstr(13,25, "Press Y To Play Again.Press Any other key to Quit.")
 	hold = getch()
