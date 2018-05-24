@@ -18,4 +18,4 @@ Current Features:
 
 7. Pause Game
 
-8. Can run on terminals unable to show color
+8. Can run on terminals unable to display color
