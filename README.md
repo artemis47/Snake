@@ -4,14 +4,18 @@ Basic 'SNAKE' game implemented on Python 2.7.15
 
 Current Features:
 
-Wrap-Around
+1. Wrap-Around
 
-Quits when Snake "eats" itself
+2. Quits when Snake "eats" itself
 
-Increasing Snake Length when it eats the "apple"
+3. Increasing Snake Length when it eats the "apple"
 
-Live Score Counter
+4. Live Score Counter
 
-Ability to Play Again
+5. Ability to Play Again
 
-Constant Speed
+6. Constant Speed
+
+7. Pause Game
+
+8. Can run on terminals unable to show color
